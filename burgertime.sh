@@ -1,6 +1,6 @@
 # burger time!
 prompt_bt() {
-	NOON=`date -j -f "%Y-%m-%d %H:%M:%S" "$(date '+%Y-%d-%m 13:00:00')" "+%s"`
+	NOON=`date -j -f "%Y-%m-%d %H:%M:%S" "$(date '+%Y-%m-%d 13:00:00')" "+%s"`
 	NOW=`date +%s`
 
 	if [ "$NOON" -lt "$NOW" ]; then
